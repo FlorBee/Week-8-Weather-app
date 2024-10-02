@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NB Weather App!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="application">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="city" id="city"></h1>
+            <p class="weather-details">
+              <span id="time"></span> <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity">></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-temp-details">
+            <div id="icon"></div>
+            <div class="weather-temperature" id="temperature"></div>
+            <div class="weather-unit" id="weather-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/FlorBee" target="_blank">Buhle Buthelezi</a
+        >, is open source on
+        <a href="https://github.com/FlorBee/Week-7.Plus" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://flor-weather-app.netlify.app" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
+    <script src="src/Index.js"></script>
+  </body>
+</html>

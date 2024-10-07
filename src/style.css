@@ -100,7 +100,7 @@ main {
 .weather-forecast-date {
   text-align: center;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   margin-bottom: 10px;
 }
@@ -115,7 +115,7 @@ main {
 .weather-forecast-temps {
   color: #ff6f3c;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
